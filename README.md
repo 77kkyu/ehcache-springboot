@@ -1,11 +1,11 @@
 # Description
 - auth : 77kkyu
 - development environment : spring-boot
-- technology : ehcache
+- technology : ehcache, docker
 
 > ehcache를 사용하여 cache 저장 API 및 삭제 API를 만들었습니다
 > 
-> Dockerfile 생성 후에 이미지로 만들어 Docker 컨테이너에 올려서 사용해봤습니다
+> Dockerfile 생성 후에 이미지로 만들어 컨테이너에 올려서 사용해봤습니다
 > 
 > [docker로 실행시키는 문서입니다](https://github.com/77kkyu/ehcache-springboot/blob/main/docs/docs.md)
 
