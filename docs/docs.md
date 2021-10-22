@@ -1,6 +1,8 @@
 # **_docker로 실행하기!_**
 
 ---
+
+
 - ## jar파일 만들기
 
 1. cmd 창에서 프로젝트가 있는 폴더로 이동합니다.
@@ -12,6 +14,8 @@
 3. build/libs 폴더에 생성된 jar파일을 확인합니다
 
 ![](https://github.com/77kkyu/ehcache-springboot/blob/main/assets/jar_image.PNG?raw=true)
+
+<br>
 
 - ## Dockerfile 생성
 
@@ -38,6 +42,8 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 **_ENTRYPOINT_** 이미지를 Container로 띄울 때 Jar파일이 실행되어 Spring 서버가 구동되도록 Command를 설정합니다. shell 스크립트를 직접 작성하고 ENTRYPOINT에 shell을 선언하는 것도 가능합니다.
 
 
+<br>
+
 - ## Docker bulid
 
 이제 작성한 Dockerfile로 이미지를 만들어야 합니다
@@ -52,6 +58,8 @@ docker build -t ehcache-springboot
 docker images -a 명령어를 실행하시면 이미지를 확인하실 수 있습니다
 ```
 ![](https://github.com/77kkyu/ehcache-springboot/blob/main/assets/dockerimg.PNG?raw=true)
+
+<br>
 
 - ## Docker Run
 이제 image를 container에 올려서 실행해보겠습니다!
